@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		5ACF658CC7E18D0613B0729D /* Pods_IntellarcSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86628DBCD357E12CB5D7F1F /* Pods_IntellarcSocial.framework */; };
 		639A76D6F49192BAA3439F0A /* Pods_IntellarcSocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D42DD7B42083268D1CB6641 /* Pods_IntellarcSocialTests.framework */; };
+		693536F422990F12006571C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693536F322990F12006571C4 /* User.swift */; };
+		693536F522990F12006571C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693536F322990F12006571C4 /* User.swift */; };
+		693536F622990F12006571C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693536F322990F12006571C4 /* User.swift */; };
 		69DD6C222297AD2F0058273B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C212297AD2F0058273B /* AppDelegate.swift */; };
-		69DD6C242297AD2F0058273B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C232297AD2F0058273B /* ViewController.swift */; };
+		69DD6C242297AD2F0058273B /* FaceBookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C232297AD2F0058273B /* FaceBookLoginViewController.swift */; };
 		69DD6C272297AD2F0058273B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DD6C252297AD2F0058273B /* Main.storyboard */; };
 		69DD6C292297AD300058273B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DD6C282297AD300058273B /* Assets.xcassets */; };
 		69DD6C2C2297AD300058273B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DD6C2A2297AD300058273B /* LaunchScreen.storyboard */; };
 		69DD6C372297AD300058273B /* IntellarcSocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C362297AD300058273B /* IntellarcSocialTests.swift */; };
 		69DD6C422297AD300058273B /* IntellarcSocialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C412297AD300058273B /* IntellarcSocialUITests.swift */; };
+		69DD6C502297D1C20058273B /* FBLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C4F2297D1C20058273B /* FBLoginViewModel.swift */; };
+		69DD6C512297D1C20058273B /* FBLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C4F2297D1C20058273B /* FBLoginViewModel.swift */; };
+		69DD6C522297D1C20058273B /* FBLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C4F2297D1C20058273B /* FBLoginViewModel.swift */; };
 		89C88FCD2EBB83DA466444F1 /* Pods_IntellarcSocialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D812242C5921E29DB90BE172 /* Pods_IntellarcSocialUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +45,10 @@
 /* Begin PBXFileReference section */
 		2475A1DEBBAEAF7625E920E1 /* Pods-IntellarcSocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntellarcSocialTests.release.xcconfig"; path = "Target Support Files/Pods-IntellarcSocialTests/Pods-IntellarcSocialTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D42DD7B42083268D1CB6641 /* Pods_IntellarcSocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntellarcSocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693536F322990F12006571C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		69DD6C1E2297AD2F0058273B /* IntellarcSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntellarcSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DD6C212297AD2F0058273B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69DD6C232297AD2F0058273B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69DD6C232297AD2F0058273B /* FaceBookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBookLoginViewController.swift; sourceTree = "<group>"; };
 		69DD6C262297AD2F0058273B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69DD6C282297AD300058273B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69DD6C2B2297AD300058273B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 		69DD6C3D2297AD300058273B /* IntellarcSocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntellarcSocialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DD6C412297AD300058273B /* IntellarcSocialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntellarcSocialUITests.swift; sourceTree = "<group>"; };
 		69DD6C432297AD300058273B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69DD6C4F2297D1C20058273B /* FBLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginViewModel.swift; sourceTree = "<group>"; };
 		9A3C27D94C3C92EAAE88CDF9 /* Pods-IntellarcSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntellarcSocial.debug.xcconfig"; path = "Target Support Files/Pods-IntellarcSocial/Pods-IntellarcSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		B6739411ABB8B58A0705FBC0 /* Pods-IntellarcSocialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntellarcSocialUITests.debug.xcconfig"; path = "Target Support Files/Pods-IntellarcSocialUITests/Pods-IntellarcSocialUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFBDFC71C431E9F193BCA9AC /* Pods-IntellarcSocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntellarcSocialTests.debug.xcconfig"; path = "Target Support Files/Pods-IntellarcSocialTests/Pods-IntellarcSocialTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +107,6 @@
 				B6739411ABB8B58A0705FBC0 /* Pods-IntellarcSocialUITests.debug.xcconfig */,
 				D9880A9D682716A0B5DD8743 /* Pods-IntellarcSocialUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -129,7 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				69DD6C212297AD2F0058273B /* AppDelegate.swift */,
-				69DD6C232297AD2F0058273B /* ViewController.swift */,
+				693536F322990F12006571C4 /* User.swift */,
+				69DD6C232297AD2F0058273B /* FaceBookLoginViewController.swift */,
+				69DD6C4F2297D1C20058273B /* FBLoginViewModel.swift */,
 				69DD6C252297AD2F0058273B /* Main.storyboard */,
 				69DD6C282297AD300058273B /* Assets.xcassets */,
 				69DD6C2A2297AD300058273B /* LaunchScreen.storyboard */,
@@ -400,8 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69DD6C242297AD2F0058273B /* ViewController.swift in Sources */,
+				693536F422990F12006571C4 /* User.swift in Sources */,
+				69DD6C242297AD2F0058273B /* FaceBookLoginViewController.swift in Sources */,
 				69DD6C222297AD2F0058273B /* AppDelegate.swift in Sources */,
+				69DD6C502297D1C20058273B /* FBLoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +420,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DD6C512297D1C20058273B /* FBLoginViewModel.swift in Sources */,
 				69DD6C372297AD300058273B /* IntellarcSocialTests.swift in Sources */,
+				693536F522990F12006571C4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +430,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DD6C522297D1C20058273B /* FBLoginViewModel.swift in Sources */,
 				69DD6C422297AD300058273B /* IntellarcSocialUITests.swift in Sources */,
+				693536F622990F12006571C4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
