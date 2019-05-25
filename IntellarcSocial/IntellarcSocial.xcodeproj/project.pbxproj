@@ -12,6 +12,9 @@
 		693536F422990F12006571C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693536F322990F12006571C4 /* User.swift */; };
 		693536F522990F12006571C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693536F322990F12006571C4 /* User.swift */; };
 		693536F622990F12006571C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693536F322990F12006571C4 /* User.swift */; };
+		693536F922997B49006571C4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 693536F822997B49006571C4 /* .swiftlint.yml */; };
+		693536FA22997B49006571C4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 693536F822997B49006571C4 /* .swiftlint.yml */; };
+		693536FB22997B49006571C4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 693536F822997B49006571C4 /* .swiftlint.yml */; };
 		69DD6C222297AD2F0058273B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C212297AD2F0058273B /* AppDelegate.swift */; };
 		69DD6C242297AD2F0058273B /* FaceBookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6C232297AD2F0058273B /* FaceBookLoginViewController.swift */; };
 		69DD6C272297AD2F0058273B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DD6C252297AD2F0058273B /* Main.storyboard */; };
@@ -46,6 +49,7 @@
 		2475A1DEBBAEAF7625E920E1 /* Pods-IntellarcSocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntellarcSocialTests.release.xcconfig"; path = "Target Support Files/Pods-IntellarcSocialTests/Pods-IntellarcSocialTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D42DD7B42083268D1CB6641 /* Pods_IntellarcSocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntellarcSocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		693536F322990F12006571C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		693536F822997B49006571C4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		69DD6C1E2297AD2F0058273B /* IntellarcSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntellarcSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DD6C212297AD2F0058273B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69DD6C232297AD2F0058273B /* FaceBookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBookLoginViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		69DD6C152297AD2F0058273B = {
 			isa = PBXGroup;
 			children = (
+				693536F822997B49006571C4 /* .swiftlint.yml */,
 				69DD6C202297AD2F0058273B /* IntellarcSocial */,
 				69DD6C352297AD300058273B /* IntellarcSocialTests */,
 				69DD6C402297AD300058273B /* IntellarcSocialUITests */,
@@ -187,6 +192,7 @@
 				69DD6C1B2297AD2F0058273B /* Frameworks */,
 				69DD6C1C2297AD2F0058273B /* Resources */,
 				B131CDBFC04F19B9BE83C24B /* [CP] Embed Pods Frameworks */,
+				693536F7229979AF006571C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693536F922997B49006571C4 /* .swiftlint.yml in Resources */,
 				69DD6C2C2297AD300058273B /* LaunchScreen.storyboard in Resources */,
 				69DD6C292297AD300058273B /* Assets.xcassets in Resources */,
 				69DD6C272297AD2F0058273B /* Main.storyboard in Resources */,
@@ -293,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693536FA22997B49006571C4 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693536FB22997B49006571C4 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +358,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		693536F7229979AF006571C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		B131CDBFC04F19B9BE83C24B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

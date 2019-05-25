@@ -9,7 +9,7 @@
 import Foundation
 
 struct User {
-    var id: String?
+    var facebookId: String?
     var name: String?
     var email: String?
     var pictureUrl: String?
